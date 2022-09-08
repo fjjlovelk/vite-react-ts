@@ -6,6 +6,9 @@ import { toggleSideOpen } from '@/redux/features/appSlice';
 
 function App() {
   const [count, setCount] = useState(0);
+  useRootState(state => {
+    console.log(state);
+  });
   const sideOpen = useRootState(state => String(state.app.sideOpen));
   const dispatch = useRootDispatch();
 
