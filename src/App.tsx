@@ -1,12 +1,18 @@
 import { useState } from 'react';
+import { useRootDispatch, useRootState } from '@/hooks/redux';
 import reactLogo from './assets/react.svg';
-import './App.css';
+import './styles/App.css';
+import { toggleSideOpen } from '@/redux/features/appSlice';
 
 function App() {
   const [count, setCount] = useState(0);
+  const sideOpen = useRootState(state => String(state.app.sideOpen));
+  const dispatch = useRootDispatch();
 
   return (
     <div className="App">
+      <div>{sideOpen}</div>
+      <button onClick={() => dispatch(toggleSideOpen())}>点我切换</button>
       <div>
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
