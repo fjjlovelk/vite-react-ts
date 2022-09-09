@@ -1,8 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-
-interface AppState {
-  sideOpen: boolean;
-}
+import { AppState } from '@/interfaces/redux';
 
 const initialState: AppState = {
   sideOpen: false

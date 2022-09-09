@@ -1,5 +1,6 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import appSlice from './features/appSlice';
+import userSlice from './features/userSlice';
 import {
   persistStore,
   persistReducer,
@@ -13,7 +14,7 @@ import {
 import storageSession from 'redux-persist/lib/storage/session';
 
 // 使用 combineReducers 连接多个reducer
-const rootReducer = combineReducers({ app: appSlice });
+const rootReducer = combineReducers({ app: appSlice, user: userSlice });
 
 // persist配置
 const persistConfig = {

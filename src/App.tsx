@@ -1,14 +1,10 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from '@/views/home';
-import NotFound from '@/views/error-page/404';
+import { BrowserRouter } from 'react-router-dom';
+import Router from '@/router';
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <Router />
     </BrowserRouter>
   );
 }

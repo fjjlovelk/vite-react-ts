@@ -1,6 +1,11 @@
+import { useEffect } from 'react';
 import { Button, Input } from 'antd';
 
 export default function Home() {
+  useEffect(() => {
+    console.log(2222);
+  }, []);
+
   return (
     <div>
       home
