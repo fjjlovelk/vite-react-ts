@@ -1,7 +1,7 @@
 import { lazy } from 'react';
 import { useRoutes } from 'react-router-dom';
 import { RouteItem } from '@/interfaces/route';
-import lazyLoad from '@/utils/lazy-load';
+import lazyLoad from '@/components/base/lazy-load/lazy-load';
 
 export const rootRouter: RouteItem[] = [
   {
