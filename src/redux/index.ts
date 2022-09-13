@@ -2,14 +2,14 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import appSlice from './features/appSlice';
 import userSlice from './features/userSlice';
 import {
-  persistStore,
-  persistReducer,
-  FLUSH,
-  REHYDRATE,
-  PAUSE,
-  PERSIST,
-  PURGE,
-  REGISTER
+	persistStore,
+	persistReducer,
+	FLUSH,
+	REHYDRATE,
+	PAUSE,
+	PERSIST,
+	PURGE,
+	REGISTER
 } from 'redux-persist';
 import storageSession from 'redux-persist/lib/storage/session';
 
@@ -18,9 +18,9 @@ const rootReducer = combineReducers({ app: appSlice, user: userSlice });
 
 // persist配置
 const persistConfig = {
-  key: 'root',
-  version: 1,
-  storage: storageSession
+	key: 'root',
+	version: 1,
+	storage: storageSession
 };
 
 // 建立persist reducer
@@ -28,14 +28,14 @@ const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 // 创建store
 const store = configureStore({
-  reducer: persistedReducer,
-  // 此处需要特殊忽略redux-persist的dispatch
-  middleware: getDefaultMiddleware =>
-    getDefaultMiddleware({
-      serializableCheck: {
-        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER]
-      }
-    })
+	reducer: persistedReducer,
+	// 此处需要特殊忽略redux-persist的dispatch
+	middleware: getDefaultMiddleware =>
+		getDefaultMiddleware({
+			serializableCheck: {
+				ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER]
+			}
+		})
 });
 
 // 创建persist store

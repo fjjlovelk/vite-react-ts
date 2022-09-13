@@ -1,7 +1,7 @@
 export interface AppState {
-  sideOpen: boolean;
+	sideOpen: boolean;
 }
 
 export interface UserState {
-  token: string;
+	token: string;
 }

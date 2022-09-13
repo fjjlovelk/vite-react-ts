@@ -1,13 +1,13 @@
 module.exports = {
-  plugins: {
-    autoprefixer: {
-      overrideBrowserslist: [
-        'defaults',
-        'not ie < 11',
-        'last 2 versions',
-        '> 1%'
-      ],
-      grid: true
-    }
-  }
+	plugins: {
+		autoprefixer: {
+			overrideBrowserslist: [
+				'defaults',
+				'not ie < 11',
+				'last 2 versions',
+				'> 1%'
+			],
+			grid: true
+		}
+	}
 };
