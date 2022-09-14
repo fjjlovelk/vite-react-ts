@@ -20,7 +20,7 @@ const AuthRouter = (props: { children: JSX.Element }) => {
 	// 判断是否有token
 	const token = store.getState().user.token;
 	if (!token) {
-		return <Navigate to="/login" replace />;
+		return <Navigate to="/login" replace={true} />;
 	}
 
 	return props.children;

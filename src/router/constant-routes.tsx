@@ -28,7 +28,7 @@ const routes: RouteItem[] = [
 	},
 	{
 		path: '*',
-		element: <Navigate to="/404" replace />
+		element: <Navigate to="/404" replace={true} />
 	}
 ];
 

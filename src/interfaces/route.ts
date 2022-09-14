@@ -9,4 +9,5 @@ export interface Meta {
 
 export interface RouteItem extends RouteObject {
 	meta?: Meta;
+	children?: RouteItem[];
 }

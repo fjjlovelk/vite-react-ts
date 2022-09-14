@@ -13,6 +13,7 @@
 - pinyin-match 1.2.2（拼音搜索）
 - nprogress 0.2.0（进度条）
 - antd 4.23.0（组件库）
+- @ant-design/icons 4.7.0（antd图标库）
 
 ## 开发插件/依赖
 - less 4.1.3（css预处理器）
