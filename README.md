@@ -27,7 +27,6 @@
 - @commitlint/cli（对提交信息进行校验）
 - @commitlint/config-conventional（对提交信息进行校验）
 - vite-plugin-compression 0.5.1（打包开启gzip压缩）
-- vite-plugin-imp 2.3.0 （按需引入）
 - less-vars-to-js 1.3.0（将less文件转换为json键值对形式）
 - @types/qs（qs声明文件）
 - @types/nprogress（nprogress声明文件）

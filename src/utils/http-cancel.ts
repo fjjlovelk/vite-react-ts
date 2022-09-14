@@ -6,12 +6,7 @@ let pendingMap = new Map<string, AbortController>();
 
 // 将请求序列化成一个字符串
 export const getPendingUrl = (config: AxiosRequestConfig) =>
-	[
-		config.url,
-		config.method,
-		qs.stringify(config.data),
-		qs.stringify(config.params)
-	].join('&');
+	[config.url, config.method, qs.stringify(config.data), qs.stringify(config.params)].join('&');
 
 // 创建取消请求类
 export class AxiosCanceler {

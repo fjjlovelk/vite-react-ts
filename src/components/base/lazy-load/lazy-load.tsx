@@ -1,15 +1,7 @@
-import {
-	ReactNode,
-	Suspense,
-	LazyExoticComponent,
-	FunctionComponent,
-	ComponentClass
-} from 'react';
+import { ReactNode, Suspense, LazyExoticComponent, FunctionComponent, ComponentClass } from 'react';
 import { Spin } from 'antd';
 
-const lazyLoad = (
-	Comp: LazyExoticComponent<FunctionComponent | ComponentClass>
-): ReactNode => {
+const lazyLoad = (Comp: LazyExoticComponent<FunctionComponent | ComponentClass>): ReactNode => {
 	return (
 		<Suspense
 			fallback={

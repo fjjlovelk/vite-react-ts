@@ -3,7 +3,7 @@ import { RouteObject } from 'react-router-dom';
 export interface Meta {
 	title?: string;
 	key?: string;
-	requireAuth?: string;
+	requireAuth?: boolean;
 	keepAlive?: boolean;
 }
 

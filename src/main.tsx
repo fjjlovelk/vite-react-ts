@@ -5,6 +5,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { ConfigProvider } from 'antd';
 import { store, persistor } from './redux';
 import App from './App';
+import 'antd/dist/antd.less';
 import './styles/index.css';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

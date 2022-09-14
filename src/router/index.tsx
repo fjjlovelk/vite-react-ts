@@ -1,22 +1,9 @@
-import { lazy } from 'react';
 import { useRoutes } from 'react-router-dom';
 import { RouteItem } from '@/interfaces/route';
-import lazyLoad from '@/components/base/lazy-load/lazy-load';
+import constantRoutes from './constant-routes';
+import asyncRoutes from './async-routes';
 
-export const rootRouter: RouteItem[] = [
-	{
-		path: '/',
-		element: lazyLoad(lazy(() => import('@/views/home')))
-	},
-	{
-		path: '/login',
-		element: lazyLoad(lazy(() => import('@/views/login')))
-	},
-	{
-		path: '*',
-		element: lazyLoad(lazy(() => import('@/views/error-page/404')))
-	}
-];
+export const rootRouter: RouteItem[] = [...constantRoutes, ...asyncRoutes];
 
 const Router = () => {
 	const routes = useRoutes(rootRouter);

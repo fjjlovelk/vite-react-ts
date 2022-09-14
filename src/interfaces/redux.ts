@@ -1,5 +1,6 @@
 export interface AppState {
-	sideOpen: boolean;
+	sideCollapse: boolean;
+	sideShow: boolean;
 }
 
 export interface UserState {
