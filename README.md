@@ -10,10 +10,14 @@
 - dayjs 1.11.5（时间处理）
 - crypto-js 4.1.1（加密解密）
 - qs 6.11.0（参数序列化）
+- pinyin 3.0.0-alpha.4（汉字转拼音）
 - pinyin-match 1.2.2（拼音搜索）
 - nprogress 0.2.0（进度条）
 - antd 4.23.0（组件库）
 - @ant-design/icons 4.7.0（antd图标库）
+- @wangeditor/editor 5.1.16（富文本）
+- echarts 5.3.3（图表）
+- esri-loader 2.8.0（ArcGIS fof JavaScript）
 
 ## 开发插件/依赖
 - less 4.1.3（css预处理器）
